@@ -1,0 +1,121 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 import React from 'react';\
+import \{ ArrowRight, Zap, Target, TrendingUp \} from 'lucide-react';\
+\
+export default function LandingPage() \{\
+  return (\
+    <div className="min-h-screen bg-gray-50">\
+      \{/* Navigation */\}\
+      <nav className="border-b border-gray-200 bg-white">\
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">\
+          <div className="flex items-center gap-2">\
+            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">\
+              <Zap className="w-5 h-5 text-white" />\
+            </div>\
+            <span className="text-xl font-semibold text-gray-900">LocalBoost</span>\
+          </div>\
+          <button className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">\
+            Get Started\
+          </button>\
+        </div>\
+      </nav>\
+\
+      \{/* Hero Section */\}\
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-24">\
+        <div className="max-w-3xl mx-auto text-center">\
+          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">\
+            AI-Powered Marketing\
+            <br />\
+            <span className="text-blue-600">for Local Businesses</span>\
+          </h1>\
+          <p className="text-xl text-gray-600 mb-10 leading-relaxed">\
+            Generate 5 ready-to-use social media posts in 30 seconds. \
+            Use them on Facebook, Instagram, TikTok, X, Reddit\'97anywhere you need to reach customers.\
+          </p>\
+          <button className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium inline-flex items-center gap-2 shadow-lg shadow-blue-600/20">\
+            Create Your First Campaign\
+            <ArrowRight className="w-5 h-5" />\
+          </button>\
+        </div>\
+      </section>\
+\
+      \{/* Features Section */\}\
+      <section className="max-w-7xl mx-auto px-6 py-20">\
+        <div className="max-w-6xl mx-auto">\
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">\
+            Everything you need to reach local customers\
+          </h2>\
+          <div className="grid md:grid-cols-3 gap-8">\
+            \{/* Feature 1 */\}\
+            <div className="bg-white p-8 rounded-xl border border-gray-200">\
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-5">\
+                <Target className="w-6 h-6 text-blue-600" />\
+              </div>\
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">\
+                5 Posts, Multiple Platforms\
+              </h3>\
+              <p className="text-gray-600 leading-relaxed">\
+                Get 5 unique posts with different tones and approaches. Copy and paste to any social platform your customers use.\
+              </p>\
+            </div>\
+\
+            \{/* Feature 2 */\}\
+            <div className="bg-white p-8 rounded-xl border border-gray-200">\
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-5">\
+                <Zap className="w-6 h-6 text-blue-600" />\
+              </div>\
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">\
+                AI-Powered Copy\
+              </h3>\
+              <p className="text-gray-600 leading-relaxed">\
+                Leverage advanced AI to create engaging, platform-appropriate content that resonates with your local audience.\
+              </p>\
+            </div>\
+\
+            \{/* Feature 3 */\}\
+            <div className="bg-white p-8 rounded-xl border border-gray-200">\
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-5">\
+                <TrendingUp className="w-6 h-6 text-blue-600" />\
+              </div>\
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">\
+                Campaign History\
+              </h3>\
+              <p className="text-gray-600 leading-relaxed">\
+                Track all your campaigns in one place. Review past content and iterate on what works best for your business.\
+              </p>\
+            </div>\
+          </div>\
+        </div>\
+      </section>\
+\
+      \{/* CTA Section */\}\
+      <section className="max-w-7xl mx-auto px-6 py-24">\
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-12 text-center shadow-xl">\
+          <h2 className="text-3xl font-bold text-white mb-4">\
+            Ready to boost your local presence?\
+          </h2>\
+          <p className="text-blue-100 text-lg mb-8">\
+            Join local businesses using AI to connect with their community.\
+          </p>\
+          <button className="px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-gray-50 transition-colors text-lg font-medium inline-flex items-center gap-2">\
+            Start Creating Now\
+            <ArrowRight className="w-5 h-5" />\
+          </button>\
+        </div>\
+      </section>\
+\
+      \{/* Footer */\}\
+      <footer className="border-t border-gray-200 py-8">\
+        <div className="max-w-7xl mx-auto px-6 text-center text-gray-600 text-sm">\
+          \'a9 2025 LocalBoost. Built for local businesses.\
+        </div>\
+      </footer>\
+    </div>\
+  );\
+\}}
