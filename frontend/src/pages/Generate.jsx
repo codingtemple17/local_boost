@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Zap, Loader2, AlertCircle } from "lucide-react";
+import API_URL from "../config";
 
 export default function Generate() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ export default function Generate() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5001/generate-campaign", {
+      const response = await fetch(`${API_URL}/generate-campaign`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
