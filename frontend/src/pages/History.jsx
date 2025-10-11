@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Zap, Loader2, Calendar, TrendingUp, Eye } from "lucide-react";
 import { useAuth } from "../AuthContext";
+import API_URL from "../config";
 
 export default function History() {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export default function History() {
   const fetchCampaigns = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5001/campaigns?user_id=${user.id}`
+        `${API_URL}/campaigns?user_id=${user.id}`
       );
       const data = await response.json();
 
