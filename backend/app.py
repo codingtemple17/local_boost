@@ -11,10 +11,7 @@ load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, origins=[
-       "http://localhost:5173",
-       "https://localboostbyvic.netlify.app"
-   ])
+CORS(app, resources={r"/*": {"origins": "https://localboostbyvic.netlify.app"}})
 
 # Initialize OpenAI client
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
